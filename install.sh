@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ---------------------------
-# curl --silent -L https://raw.githubusercontent.com/tpkn/csvchk/main/install.sh | sudo bash
+# curl --silent -L https://raw.githubusercontent.com/tpkn/checkcsv/main/install.sh | sudo bash
 # ---------------------------
 function main {
-	release_url="https://github.com/tpkn/csvchk/releases/latest/download/csvchk"
+	release_url="https://github.com/tpkn/checkcsv/releases/latest/download/checkcsv"
 
 	binary_name=$(cut -d '/' -f 9 <<< "$release_url")
 	binary_path="/usr/local/bin/$binary_name"
