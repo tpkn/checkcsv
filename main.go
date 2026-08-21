@@ -54,8 +54,8 @@ func main() {
 	var args = Args{}
 	flag.BoolVar(&args.Cumulative, "c", false, "Collect all csv errors and output the list at the end")
 	flag.BoolVar(&args.Quiet, "q", false, "Silently terminate with exit(1) upon the first error encountered in the csv")
-	flag.BoolVar(&args.Summary, "s", false, "Print summary info (check summary, total columns, total rows)")
-	flag.BoolVar(&args.SummaryJSON, "sj", false, "Print summary infoas a JSON string")
+	flag.BoolVar(&args.Summary, "s", false, "Print summary info (valid/invalid, total columns, total rows)")
+	flag.BoolVar(&args.SummaryJSON, "sj", false, "Print summary info as a JSON string")
 	flag.StringVar(&args.Delimiter, "d", ",", "Fields separator (default: comma)")
 	flag.BoolVar(&args.Help, "h", false, "Help")
 	flag.BoolVar(&args.Help, "help", false, "Alias for -h")
